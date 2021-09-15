@@ -21,7 +21,6 @@ int main() {
 
     //variables 
     char input[100];
-    char input3; 
     char input2[100];
 
     cout << "Enter a word or sentence: "; 
