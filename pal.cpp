@@ -4,7 +4,7 @@
 using namespace std; 
 
 //function that returns true or false based on comparing char array forwards and backwards 
-bool isPal(char x[100], int len) {
+bool isPal(char x[80], int len) {
      for(int i = 0; i < len; i++){
         if(x[i] != x[len-i-1]) { //compares with the array running  backwards 
             return false; 
@@ -20,11 +20,11 @@ bool isPal(char x[100], int len) {
 int main() {
 
     //variables 
-    char input[100];
-    char input2[100];
+    char input[80];
+    char input2[80];
 
     cout << "Enter a word or sentence: "; 
-    cin.getline(input, 100); 
+    cin.getline(input, 80); 
     int len = strlen(input); 
     int k = 0; 
 
