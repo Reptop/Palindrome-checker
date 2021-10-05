@@ -1,7 +1,6 @@
 //Author: Raed K 
 //10/5/21 
 //This program basically checks if a word or sentence is a panidrome 
-
 #include <iostream> 
 #include <cstring>
 using namespace std; 
@@ -31,19 +30,13 @@ int main() {
     for (int i = k; i --> 0; ){ //for loop backwards and insert reversed array into another array
       input3[l] = input2[i]; 
       l++; 
-  } 
-    //Display the different stages of the program 
-    cout << "Filtered Input: " << input2 << endl; 
-    cout << "Reversed Input: " << input3 << endl; 
+    }
 
   //str compare the filtered input and reversed input
-  if (strcmp(input3, input2) == 0) { 
-      //if true, return as a palindrome 
-      cout << "Its a Palindrome" << endl; 
+  if (memcmp(input2, input3, l) == 0){ //compare memory
+    cout << "Palindrome." << endl;
+  } else {
+    cout << "Not a Palindrome." << endl;
   } 
-  else {
-    //otherwise its not a palindrome 
-    cout << "Not a palindrome" << endl; 
-  }
-
+ return 0;
 }
